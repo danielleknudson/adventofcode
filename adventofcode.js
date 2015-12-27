@@ -1,4 +1,3 @@
-var md5   = require('md5');
 var one   = require('./1/one.js');
 var two   = require('./2/two.js');
 var three = require('./3/three.js');
@@ -25,4 +24,11 @@ console.log('Number of houses Santa and Robo Santa deliver presents to: ' + numH
 
 /**
 * Day 4
+*
+* Note: to find num2 is painfully slow, may need to run in four.js
 **/
+var num = four.findLowestNumber();
+var num2 = four.findNumberThatCreatesSixZeroHash(num);
+console.log('DAY 4');
+console.log('The lowest number to create a hash with 5 leading zeros is: ' + num);
+console.log('The lowest number to create a hash with 6 leading zeros is: ' + num2);
